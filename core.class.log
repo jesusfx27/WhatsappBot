@@ -1,0 +1,81 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '34641420931@s.whatsapp.net',
+    fromMe: false,
+    id: '2FFD8498057B252BD26A88308F067AFD',
+    participant: undefined
+  },
+  messageTimestamp: 1725931565,
+  pushName: 'Jesúsfx',
+  broadcast: false,
+  message: Message {
+    conversation: '1',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2
+    }
+  },
+  body: '1',
+  from: '34641420931'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_8a660699-92d7-4b86-b13d-d87fd2bb7a60',
+  keyword: 'key_8dd18ebd-d248-4d08-8cdc-06f9bed8d022',
+  answer: '*Formas de Ganar*:\n' +
+    '-Diagonal de la B a O\n' +
+    '-Diagonal de la O a  B\n' +
+    '-4 Esquinas\n' +
+    '-Cruz grande\n' +
+    '-Linea vertical\n' +
+    '-Linea Horizontal\n' +
+    '-Carton lleno',
+  options: {
+    media: 'https://bingove.com/images/formas-de-ganar.png',
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: 'ebc0f6cdcbe28b3c5fc7d04f5087558f'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_eb870647-e566-4656-8f24-8635a5ba3927',
+  keyword: 'ans_8a660699-92d7-4b86-b13d-d87fd2bb7a60',
+  answer: '*NOTA*: las lineas vertical y horizontal, se pueden dar en cualquier parte del carton, y su carton participa por todos los premios',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '8bd2222bc06747987d69022f5e809572'
+}
+[QUEUE_SE_ENVIO]:  {
+  ref: 'ans_c30ce1a4-1063-43ed-832f-652dcada913c',
+  keyword: 'ans_eb870647-e566-4656-8f24-8635a5ba3927',
+  answer: 'escribe 2️⃣ para continuar',
+  options: {
+    media: null,
+    buttons: [],
+    capture: false,
+    child: null,
+    delay: 0,
+    idle: null,
+    ref: null,
+    nested: [],
+    keyword: {},
+    callback: false
+  },
+  refSerialize: '1ea169f4d2bb5ce13f177d4d3869dbd5'
+}
