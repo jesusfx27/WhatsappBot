@@ -6,6 +6,7 @@ const MockAdapter = require('@bot-whatsapp/database/mock')
 
 const FlowBienvenida = addKeyword(EVENTS.WELCOME)
     .addAnswer([
+         
         "Hola. solo estoy diseñado para dar informacion basica sobre nosotros🤖",
         "y se que estas aqui por eso",
         "asi que, en resumen...",
@@ -20,12 +21,13 @@ const FlowBienvenida = addKeyword(EVENTS.WELCOME)
        
         "\n💰Cada carton suma al total a repartir",
        
-        "\n📱Pagos a travez de pago movil",
-    ]
-               {delay: 500})
+        "\n📱Pagos a travez de pago movil"] ,
+        {delay: 5000}
+    
+               )
     .addAnswer(
         "escribe 1️⃣ para continuar",
-         {delay: 500}
+         {delay: 5000}
        )
 
 const FlowFormasDeganar = addKeyword ("1")
@@ -37,11 +39,11 @@ const FlowFormasDeganar = addKeyword ("1")
         "-Cruz grande",
         "-Linea vertical",
         "-Linea Horizontal",
-        "-Carton lleno"],{media: "https://bingove.com/images/formas-de-ganar.png"})
+        "-Carton lleno"],{media: "https://bingove.com/images/formas-de-ganar.png"}, {delay: 5000} )
 
-        .addAnswer("*NOTA*: las lineas vertical y horizontal, se pueden dar en cualquier parte del carton, y su carton participa por todos los premios")
+        .addAnswer("*NOTA*: las lineas vertical y horizontal, se pueden dar en cualquier parte del carton, y su carton participa por todos los premios",{delay: 5000})
         .addAnswer(
-            "escribe 2️⃣ para continuar",
+            "escribe 2️⃣ para continuar", {delay: 5000}
             )
 
 const FlowComoCantoBingo = addKeyword("2")
@@ -52,20 +54,20 @@ const FlowComoCantoBingo = addKeyword("2")
         "junto con su nombre",
         "*(en vivo)*",
         "y de no estar presente, nosotros le llamaremos",
-        "en este video explico el porque 👇",])
+        "en este video explico el porque 👇"], {delay: 5000})
 
-    .addAnswer("https://www.youtube.com/watch?v=83E4cPasiTQ")
+    .addAnswer("https://www.youtube.com/watch?v=83E4cPasiTQ", {delay: 5000})
     .addAnswer(
-        "escribe 3️⃣ para proceder a comprar"
+        "escribe 3️⃣ para proceder a comprar", {delay: 5000}
       )
 
 const FlowComprar = addKeyword("3")
     .addAnswer([
         "en caso de tener dudas, aclaralas con el promotor",
         "que te facilitaremos con este link 👇 antes de comprar el carton"
-    ])
-    .addAnswer("bingove.com/info")
-    .addAnswer("Recuerda guardar el numero de ese promotor, ya que este bot es solo para dar informacion basica de nuestro sistema")
+    ], {delay: 5000})
+    .addAnswer("bingove.com/info", {delay: 5000})
+    .addAnswer("Recuerda guardar el numero de ese promotor, ya que este numero es solo para dar informacion basica de nuestro sistema", {delay: 5000})
 const main = async () => {
     const adapterDB = new MockAdapter()
     const adapterFlow = createFlow([FlowBienvenida, FlowComoCantoBingo,FlowFormasDeganar, FlowComprar])
